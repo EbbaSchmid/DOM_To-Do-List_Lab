@@ -21,6 +21,5 @@ button.addEventListener('click', function(evt) {
 })
 
 
-// CER for click.........................
-// const ul = document.createElement('ul').addEventListener('click', Click)
+
 
