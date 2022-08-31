@@ -17,10 +17,18 @@ const ul = document.getElementById("todo-list")
 
 button.addEventListener('click', function(evt) {
     const li = document.createElement('li')
-    li.textContent = input.value 
-    console.log(li)
-});
+    li.textContent = input.value
+})
+
+// CER for reset button.........................
+const reset = document.getElementById('reset-button')
+
+document.querySelector('ul').addEventListener('click', Click)
 
 
-document.querySelector('ul').appendChild(li)
+reset.addEventListener('click', function(evt) {
+    ul.innerHTML = ''
+    input.value = ''
+})
 
+document.querySelector('ul').addEventListener('click', handleClick)
